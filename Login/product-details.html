@@ -1,0 +1,48 @@
+<!-- product-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./autoMobile.css">
+    <script defer src="./productDetails.js"></script>
+    <!-- <script src="./autoMobile.js"></script> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoSpareWorld</div>
+            <ul class="nav-links">
+                <li><a href="./autoMobile.html">Home</a></li>
+                <li><a href="./autoMobile.html#products">Products</a></li>
+            </ul>
+            <div class="cart">
+                <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+    <div id="cart-dropdown">
+        <h2>Your Cart</h2>
+        <ul id="cart-items-list"></ul>
+        <p id="empty-cart-message">Your cart is empty.</p>
+    </div>
+
+    <main>
+        <section class="product-details">
+            <h2 id="product-name">Product Name</h2>
+            <img id="product-image" src="placeholder.jpg" alt="Product Image" style="max-width: 100%; max-height: 300px; width: auto; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: block; margin: 10px auto;">
+            <p id="product-description">Product Description</p>
+            <p><strong>Price:</strong> <span id="product-price">0</span></p>
+            <h3>Specifications</h3>
+            <ul id="product-specifications">
+                <!-- Specifications will be dynamically inserted -->
+            </ul>
+            <button id="buy-now">Buy Now</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AutoSpareWorld. All rights reserved.</p>
+    </footer>
+</body>
+</html>
