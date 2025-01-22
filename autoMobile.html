@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Spare Parts</title>
+    <link rel="stylesheet" href="./autoMobile.css">
+    <script type="module" src="./autoMobile.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoSpareWorld</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#profile">Profile</a></li>
+                 <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for products..." />
+                <button id="search-button">Search</button>
+            </div>
+            </ul>
+              <!-- Cart Section -->
+                <div class="cart">
+                <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div id="cart-dropdown">
+        <h2>Your Cart</h2>
+        <ul id="cart-items-list"></ul>
+        <p id="empty-cart-message">Your cart is empty.</p>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to AutoSpareWorld</h1>
+            <div class="hero-images">
+                <img src="./car-accessories.webp" alt="Car Accessories">
+                <img src="./best-car-interiors.jpg" alt="Car Interiors">
+                <img src="./car-exterior.avif" alt="Car Exterior">
+            </div>
+            <button class="slider-button prev-button" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-button next-button" onclick="nextSlide()">&#10095;</button>
+            <p>Your one-stop shop for quality automobile spare parts</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-list">
+                <!-- Product cards will be dynamically rendered here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-section">
+                    <img src="./About-img.webp" alt="Company Story Image">
+                    <div class="text-content">
+                        <h3>The AutoSpareWorld Story</h3>
+                        <p>We sell state-of-the-art aftermarket spare parts catering to the automotive industry in India with a large variety of products, from indicators and backrests to rearview mirrors, etc. We house products for all major brands in India, ranging from Tata, Maurity, Toyota, and Mahindra.</p>
+                        <p>In our company, the customer is King, and we are all here to serve their needs. Our young and experienced team is well-connected at every level and position, which brings healthy discussions to find solutions that ultimately improve the system and help the company serve its customers better every time.</p>
+                    </div>
+                </div>
+                <div class="about-section">
+                    <div class="text-content">
+                        <h3>Why AutoSpareWorld?</h3>
+                        <h4>Our Mission</h4>
+                        <p>Our mission is to sell all automobile spare parts under one roof.</p>
+                        <h4>Our Objective</h4>
+                        <p>Our objective is to serve market requirements by regularly updating our range of products for the latest trends.</p>
+                    </div>
+                    <img src="./About2-img.webp" alt="Why Choose Us Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="profile">
+            <h2>User Profile</h2>
+            <div id="profile-details">
+                <p><strong>Name:</strong> <span id="profile-name">Not Provided</span></p>
+                <p><strong>Email:</strong> <span id="profile-email">Not Provided</span></p>
+                <p><strong>Message:</strong> <span id="profile-message">Not Provided</span></p>
+            </div>
+        </section>        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AutoSpareWorld. All rights reserved.</p>
+    </footer>
+</body>
+</html>
